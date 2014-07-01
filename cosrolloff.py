@@ -34,7 +34,7 @@ def make_response( ovs=8, alpha=0.2, cut_sym=10 ):
     pi = numpy.pi
     t0 = ovs
     
-    t = numpy.arange(ovs*cut_sym)
+    t = numpy.arange(ovs*cut_sym, dtype=float)
 
     special = t0 / (2*alpha)
     # print ( "s16pecial", special ) # 特異点
@@ -137,5 +137,5 @@ def test_conste():
 
 if __name__ == "__main__":
     # test_gauss()
-    test_conste()
-    # test2()
+    # test_conste()
+    test2()
